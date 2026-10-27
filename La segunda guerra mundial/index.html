@@ -1,0 +1,752 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Ecos de la Historia: descubre los acontecimientos, las batallas y las consecuencias de la Segunda Guerra Mundial.">
+
+    <title>Ecos de la Historia | Segunda Guerra Mundial</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- =====================================
+         ENCABEZADO
+    ====================================== -->
+
+    <header class="site-header" id="inicio">
+
+        <a href="#inicio" class="logo" aria-label="Ecos de la Historia, inicio">
+            <span class="logo-symbol">✦</span>
+            <span>Ecos de la Historia</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#contexto">Contexto</a>
+            <a href="#cronologia">Cronología</a>
+            <a href="#batallas">Acontecimientos</a>
+            <a href="#consecuencias">Consecuencias</a>
+        </nav>
+
+        <button
+            type="button"
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Cambiar tema de la página"
+            aria-pressed="false">
+            ☾
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================
+             PORTADA
+        ====================================== -->
+
+        <section class="hero" aria-labelledby="hero-title">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    1939 — 1945 · ARCHIVO HISTÓRICO
+                </p>
+
+                <h1 id="hero-title">
+                    La historia no debe
+                    <span>caer en el olvido.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Seis años que transformaron el mundo. Explora los
+                    acontecimientos de la Segunda Guerra Mundial, conoce
+                    sus protagonistas y descubre cómo sus consecuencias
+                    siguen presentes en nuestra historia.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#cronologia" class="btn btn-primary">
+                        Explorar la historia
+                    </a>
+
+                    <a href="#contexto" class="btn btn-secondary">
+                        Comprender el conflicto
+                    </a>
+                </div>
+
+                <p class="hero-note">
+                    Un recorrido por los hechos que marcaron una época.
+                </p>
+
+            </div>
+
+            <figure class="hero-image image-frame">
+
+                <img
+                    src="images/berlin-1945.jpg"
+                    alt="Ruinas de Berlín al final de la Segunda Guerra Mundial"
+                    loading="eager"
+                    fetchpriority="high"
+                    onerror="this.onerror=null;this.src='images/invasion-polonia.jpg';">
+
+                <figcaption>
+                    Berlín, 1945 · El continente europeo tras años de guerra.
+                </figcaption>
+
+            </figure>
+
+            <div class="hero-stamp" aria-hidden="true">
+                ARCHIVO<br>1939–1945
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             FRANJA CRONOLÓGICA
+        ====================================== -->
+
+        <section class="year-strip" aria-label="Años del conflicto">
+
+            <div>
+                <span>1939</span>
+                <small>Comienza la guerra</small>
+            </div>
+
+            <span class="year-line" aria-hidden="true"></span>
+
+            <div>
+                <span>1941</span>
+                <small>El conflicto se amplía</small>
+            </div>
+
+            <span class="year-line" aria-hidden="true"></span>
+
+            <div>
+                <span>1944</span>
+                <small>Avanza la liberación</small>
+            </div>
+
+            <span class="year-line" aria-hidden="true"></span>
+
+            <div>
+                <span>1945</span>
+                <small>Termina la guerra</small>
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             CONTEXTO HISTÓRICO
+        ====================================== -->
+
+        <section class="content-section" id="contexto">
+
+            <div class="section-heading">
+                <p class="eyebrow">ANTES DEL CONFLICTO</p>
+                <h2>¿Por qué comenzó la guerra?</h2>
+                <p>
+                    Para comprender los acontecimientos, primero debemos
+                    conocer las tensiones políticas, económicas y territoriales
+                    que prepararon el camino hacia el conflicto.
+                </p>
+            </div>
+
+            <div class="context-grid">
+
+                <article class="context-card">
+                    <span class="context-number">01</span>
+                    <h3>Las consecuencias de la Primera Guerra Mundial</h3>
+                    <p>
+                        El Tratado de Versalles de 1919 impuso condiciones
+                        duras a Alemania. El descontento y la inestabilidad
+                        fueron aprovechados por movimientos extremistas.
+                    </p>
+                </article>
+
+                <article class="context-card">
+                    <span class="context-number">02</span>
+                    <h3>El ascenso del nazismo</h3>
+                    <p>
+                        Adolf Hitler y el Partido Nazi establecieron una
+                        dictadura, promovieron el racismo y el antisemitismo,
+                        y buscaron expandir el territorio alemán.
+                    </p>
+                </article>
+
+                <article class="context-card">
+                    <span class="context-number">03</span>
+                    <h3>La expansión territorial</h3>
+                    <p>
+                        Alemania, Italia y Japón impulsaron políticas
+                        expansionistas. Las respuestas internacionales
+                        no consiguieron detener la escalada de agresiones.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             CRONOLOGÍA INTERACTIVA
+        ====================================== -->
+
+        <section class="content-section timeline-section" id="cronologia">
+
+            <div class="section-heading">
+                <p class="eyebrow">1939 — 1945</p>
+                <h2>Seis años que cambiaron el mundo</h2>
+                <p>
+                    Cada tarjeta es un expediente histórico. Haz clic en
+                    cualquiera para abrir su historia, conocer sus causas,
+                    seguir su desarrollo y entender sus consecuencias.
+                </p>
+            </div>
+
+            <div class="timeline-intro">
+                <span class="timeline-intro-icon" aria-hidden="true">✦</span>
+                <p>
+                    <strong>Instrucción:</strong> selecciona un acontecimiento
+                    para consultar su expediente completo.
+                </p>
+            </div>
+
+
+            <div class="event-grid" id="event-grid">
+
+                <!-- ACONTECIMIENTO 1 -->
+
+                <article class="event-card" data-event="polonia">
+
+                    <button
+                        type="button"
+                        class="event-card-button"
+                        data-open-event="polonia"
+                        aria-controls="event-detail"
+                        aria-label="Leer la historia de la invasión de Polonia">
+
+                        <div class="event-image image-frame">
+                            <img
+                                src="images/invasion-polonia.jpg"
+                                alt="Imagen histórica relacionada con la invasión de Polonia en 1939"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='images/berlin-1945.jpg';">
+
+                            <span class="event-date">1 SEP. 1939</span>
+                        </div>
+
+                        <div class="event-card-content">
+                            <p class="event-category">EL INICIO</p>
+                            <h3>La invasión de Polonia</h3>
+                            <p>
+                                La ofensiva alemana provocó que Reino Unido
+                                y Francia declararan la guerra a Alemania.
+                            </p>
+
+                            <span class="event-read-more">
+                                Abrir expediente <span aria-hidden="true">↗</span>
+                            </span>
+                        </div>
+
+                    </button>
+
+                </article>
+
+
+                <!-- ACONTECIMIENTO 2 -->
+
+                <article class="event-card" data-event="britania">
+
+                    <button
+                        type="button"
+                        class="event-card-button"
+                        data-open-event="britania"
+                        aria-controls="event-detail"
+                        aria-label="Leer la historia de la batalla de Inglaterra">
+
+                        <div class="event-image image-frame">
+                            <img
+                                src="images/batalla-britania.jpg"
+                                alt="Imagen histórica relacionada con la batalla de Inglaterra"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='images/berlin-1945.jpg';">
+
+                            <span class="event-date">1940</span>
+                        </div>
+
+                        <div class="event-card-content">
+                            <p class="event-category">GUERRA AÉREA</p>
+                            <h3>La batalla de Inglaterra</h3>
+                            <p>
+                                La aviación alemana intentó debilitar
+                                las defensas británicas mediante ataques aéreos.
+                            </p>
+
+                            <span class="event-read-more">
+                                Abrir expediente <span aria-hidden="true">↗</span>
+                            </span>
+                        </div>
+
+                    </button>
+
+                </article>
+
+
+                <!-- ACONTECIMIENTO 3 -->
+
+                <article class="event-card" data-event="pearl-harbor">
+
+                    <button
+                        type="button"
+                        class="event-card-button"
+                        data-open-event="pearl-harbor"
+                        aria-controls="event-detail"
+                        aria-label="Leer la historia del ataque a Pearl Harbor">
+
+                        <div class="event-image image-frame">
+                            <img
+                                src="images/pearl-harbor.jpg"
+                                alt="Imagen histórica relacionada con el ataque japonés a Pearl Harbor"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='images/berlin-1945.jpg';">
+
+                            <span class="event-date">7 DIC. 1941</span>
+                        </div>
+
+                        <div class="event-card-content">
+                            <p class="event-category">EL PACÍFICO</p>
+                            <h3>El ataque a Pearl Harbor</h3>
+                            <p>
+                                El ataque japonés a la base estadounidense
+                                impulsó la entrada de Estados Unidos en la guerra.
+                            </p>
+
+                            <span class="event-read-more">
+                                Abrir expediente <span aria-hidden="true">↗</span>
+                            </span>
+                        </div>
+
+                    </button>
+
+                </article>
+
+
+                <!-- ACONTECIMIENTO 4 -->
+
+                <article class="event-card" data-event="stalingrado">
+
+                    <button
+                        type="button"
+                        class="event-card-button"
+                        data-open-event="stalingrado"
+                        aria-controls="event-detail"
+                        aria-label="Leer la historia de la batalla de Stalingrado">
+
+                        <div class="event-image image-frame">
+                            <img
+                                src="images/stalingrado.jpg"
+                                alt="Imagen histórica relacionada con la batalla de Stalingrado"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='images/berlin-1945.jpg';">
+
+                            <span class="event-date">1942–1943</span>
+                        </div>
+
+                        <div class="event-card-content">
+                            <p class="event-category">FRENTE ORIENTAL</p>
+                            <h3>La batalla de Stalingrado</h3>
+                            <p>
+                                La derrota alemana en esta batalla se convirtió
+                                en un importante punto de inflexión en Europa.
+                            </p>
+
+                            <span class="event-read-more">
+                                Abrir expediente <span aria-hidden="true">↗</span>
+                            </span>
+                        </div>
+
+                    </button>
+
+                </article>
+
+
+                <!-- ACONTECIMIENTO 5 -->
+
+                <article class="event-card" data-event="normandia">
+
+                    <button
+                        type="button"
+                        class="event-card-button"
+                        data-open-event="normandia"
+                        aria-controls="event-detail"
+                        aria-label="Leer la historia del desembarco de Normandía">
+
+                        <div class="event-image image-frame">
+                            <img
+                                src="images/normandia.jpg"
+                                alt="Imagen histórica relacionada con el desembarco aliado en Normandía"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='images/berlin-1945.jpg';">
+
+                            <span class="event-date">6 JUN. 1944</span>
+                        </div>
+
+                        <div class="event-card-content">
+                            <p class="event-category">DÍA D</p>
+                            <h3>El desembarco de Normandía</h3>
+                            <p>
+                                Las fuerzas aliadas desembarcaron en Francia
+                                para abrir un nuevo frente contra Alemania.
+                            </p>
+
+                            <span class="event-read-more">
+                                Abrir expediente <span aria-hidden="true">↗</span>
+                            </span>
+                        </div>
+
+                    </button>
+
+                </article>
+
+
+                <!-- ACONTECIMIENTO 6 -->
+
+                <article class="event-card" data-event="berlin">
+
+                    <button
+                        type="button"
+                        class="event-card-button"
+                        data-open-event="berlin"
+                        aria-controls="event-detail"
+                        aria-label="Leer la historia de la caída de Berlín">
+
+                        <div class="event-image image-frame">
+                            <img
+                                src="images/berlin-1945.jpg"
+                                alt="Ruinas de Berlín al final de la guerra en Europa"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='images/invasion-polonia.jpg';">
+
+                            <span class="event-date">ABRIL–MAYO 1945</span>
+                        </div>
+
+                        <div class="event-card-content">
+                            <p class="event-category">EL FINAL EN EUROPA</p>
+                            <h3>La caída de Berlín</h3>
+                            <p>
+                                La ofensiva soviética culminó con la toma
+                                de Berlín y la derrota del régimen nazi.
+                            </p>
+
+                            <span class="event-read-more">
+                                Abrir expediente <span aria-hidden="true">↗</span>
+                            </span>
+                        </div>
+
+                    </button>
+
+                </article>
+
+
+                <!-- ACONTECIMIENTO 7 -->
+
+                <article class="event-card" data-event="hiroshima">
+
+                    <button
+                        type="button"
+                        class="event-card-button"
+                        data-open-event="hiroshima"
+                        aria-controls="event-detail"
+                        aria-label="Leer la historia de los bombardeos atómicos">
+
+                        <div class="event-image image-frame">
+                            <img
+                                src="images/hiroshima.jpg"
+                                alt="Imagen histórica relacionada con Hiroshima en agosto de 1945"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='images/berlin-1945.jpg';">
+
+                            <span class="event-date">AGO. 1945</span>
+                        </div>
+
+                        <div class="event-card-content">
+                            <p class="event-category">EL PACÍFICO</p>
+                            <h3>Hiroshima y Nagasaki</h3>
+                            <p>
+                                Estados Unidos lanzó bombas atómicas sobre
+                                dos ciudades japonesas durante los últimos
+                                días de la guerra.
+                            </p>
+
+                            <span class="event-read-more">
+                                Abrir expediente <span aria-hidden="true">↗</span>
+                            </span>
+                        </div>
+
+                    </button>
+
+                </article>
+
+
+                <!-- ACONTECIMIENTO 8 -->
+
+                <article class="event-card" data-event="victoria">
+
+                    <button
+                        type="button"
+                        class="event-card-button"
+                        data-open-event="victoria"
+                        aria-controls="event-detail"
+                        aria-label="Leer la historia del final de la Segunda Guerra Mundial">
+
+                        <div class="event-image image-frame">
+                            <img
+                                src="images/victoria-1945.jpg"
+                                alt="Imagen histórica relacionada con el final de la Segunda Guerra Mundial"
+                                loading="lazy"
+                                onerror="this.onerror=null;this.src='images/berlin-1945.jpg';">
+
+                            <span class="event-date">1945</span>
+                        </div>
+
+                        <div class="event-card-content">
+                            <p class="event-category">EL FIN DEL CONFLICTO</p>
+                            <h3>La victoria aliada</h3>
+                            <p>
+                                Alemania se rindió en mayo y Japón en septiembre
+                                de 1945, poniendo fin a la guerra mundial.
+                            </p>
+
+                            <span class="event-read-more">
+                                Abrir expediente <span aria-hidden="true">↗</span>
+                            </span>
+                        </div>
+
+                    </button>
+
+                </article>
+
+            </div>
+
+
+            <!-- =====================================
+                 VENTANA DEL EXPEDIENTE HISTÓRICO
+                 El JavaScript colocará aquí el contenido.
+            ====================================== -->
+
+            <section
+                id="event-detail"
+                class="event-detail"
+                aria-labelledby="detail-title"
+                aria-live="polite"
+                hidden>
+
+                <div class="detail-topbar">
+                    <span class="detail-label">EXPEDIENTE HISTÓRICO</span>
+
+                    <button
+                        type="button"
+                        id="close-detail"
+                        class="detail-close"
+                        aria-label="Cerrar expediente">
+                        ✕ Cerrar
+                    </button>
+                </div>
+
+                <div id="detail-content">
+                    <p>Selecciona un acontecimiento para leer su historia.</p>
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- =====================================
+             BANDOS
+        ====================================== -->
+
+        <section class="content-section factions-section" id="bandos">
+
+            <div class="section-heading">
+                <p class="eyebrow">LOS PROTAGONISTAS</p>
+                <h2>Los bandos enfrentados</h2>
+                <p>
+                    Distintos países participaron en el conflicto,
+                    aunque las alianzas y la situación de cada nación
+                    cambiaron a lo largo de la guerra.
+                </p>
+            </div>
+
+            <div class="factions-grid">
+
+                <article class="faction-card allies-card">
+                    <div class="faction-mark" aria-hidden="true">✦</div>
+                    <p class="faction-label">ALIANZA</p>
+                    <h3>Los Aliados</h3>
+                    <p>
+                        Entre sus principales integrantes estuvieron
+                        Reino Unido, la Unión Soviética, Estados Unidos,
+                        China y Francia Libre.
+                    </p>
+                    <p class="faction-note">
+                        Objetivo: derrotar a las potencias del Eje.
+                    </p>
+                </article>
+
+                <article class="faction-card axis-card">
+                    <div class="faction-mark" aria-hidden="true">✧</div>
+                    <p class="faction-label">ALIANZA</p>
+                    <h3>Las potencias del Eje</h3>
+                    <p>
+                        Sus principales integrantes fueron Alemania,
+                        Italia y Japón. Sus gobiernos impulsaron políticas
+                        expansionistas y agresiones militares.
+                    </p>
+                    <p class="faction-note">
+                        Sus derrotas condujeron al fin del conflicto.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             CONSECUENCIAS
+        ====================================== -->
+
+        <section class="content-section consequences-section" id="consecuencias">
+
+            <div class="section-heading">
+                <p class="eyebrow">EL MUNDO DESPUÉS DE 1945</p>
+                <h2>Las consecuencias de la guerra</h2>
+                <p>
+                    El final de los combates no significó el final
+                    del sufrimiento. El conflicto dejó cambios profundos
+                    en las sociedades y en las relaciones internacionales.
+                </p>
+            </div>
+
+            <div class="consequences-grid">
+
+                <article class="consequence-item">
+                    <span class="consequence-number">01</span>
+                    <h3>Pérdidas humanas</h3>
+                    <p>
+                        Decenas de millones de personas murieron. Entre
+                        las víctimas hubo civiles, soldados y millones
+                        de personas perseguidas y asesinadas por el nazismo.
+                    </p>
+                </article>
+
+                <article class="consequence-item">
+                    <span class="consequence-number">02</span>
+                    <h3>Ciudades devastadas</h3>
+                    <p>
+                        Numerosas ciudades e infraestructuras quedaron
+                        destruidas. Millones de personas tuvieron que
+                        reconstruir sus vidas en condiciones difíciles.
+                    </p>
+                </article>
+
+                <article class="consequence-item">
+                    <span class="consequence-number">03</span>
+                    <h3>La creación de la ONU</h3>
+                    <p>
+                        En 1945 se fundó la Organización de las Naciones
+                        Unidas con el propósito de promover la cooperación
+                        internacional y contribuir a mantener la paz.
+                    </p>
+                </article>
+
+                <article class="consequence-item">
+                    <span class="consequence-number">04</span>
+                    <h3>Un nuevo orden mundial</h3>
+                    <p>
+                        Estados Unidos y la Unión Soviética se convirtieron
+                        en superpotencias. Sus rivalidades dieron paso
+                        a la Guerra Fría.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             REFLEXIÓN FINAL
+        ====================================== -->
+
+        <section class="closing-section">
+
+            <div class="closing-decoration" aria-hidden="true">❝</div>
+
+            <p class="eyebrow">MEMORIA HISTÓRICA</p>
+
+            <h2>Recordar también es aprender.</h2>
+
+            <p>
+                Estudiar la Segunda Guerra Mundial no consiste únicamente
+                en memorizar fechas y nombres. Significa comprender cómo
+                el odio, el autoritarismo, la discriminación y la violencia
+                pueden transformar la vida de millones de personas.
+            </p>
+
+            <p>
+                Conocer el pasado nos ayuda a reconocer los peligros
+                del presente y a valorar la paz, los derechos humanos
+                y la cooperación entre los pueblos.
+            </p>
+
+            <a href="#inicio" class="btn btn-primary">
+                Volver al inicio ↑
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================
+         PIE DE PÁGINA
+    ====================================== -->
+
+    <footer class="site-footer">
+
+        <a href="#inicio" class="footer-logo">
+            Ecos de la Historia
+        </a>
+
+        <p>
+            Proyecto educativo sobre la Segunda Guerra Mundial.
+        </p>
+
+        <p class="footer-disclaimer">
+            Las imágenes históricas deben conservar sus créditos y
+            licencias originales. Consulta las fuentes antes de publicar.
+        </p>
+
+        <p class="footer-copy">
+            © 2026 · Ecos de la Historia
+        </p>
+
+    </footer>
+
+</body>
+</html>
